@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+    <link rel="shortcut icon" href="images/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container vh-100 pt-5 hero">
+        <div class="mx-auto w-75 bg-black bg-opacity-50 shadow py-4 mt-5">
+            <h1 class="text-center text-light">Sign UP</h1>
+            <form class="mt-3 row gy-3 px-5">
+                <input
+                    class="form-control border border-1 border-light rounded-0 focus-ring focus-ring-light placeholder-glow"
+                    placeholder="Enter Your Name" type="text" id="signUpName">
+                <div class="alert alert-danger text-danger d-none signUpName">
+                    Name Can not be Empty!
+                </div>
+                <input
+                    class="form-control border border-1 border-light rounded-0 focus-ring focus-ring-light placeholder-glow"
+                    placeholder="Enter Your Email" type="email" id="signUpEmail">
+                <div class="alert alert-danger text-danger d-none signUpEmail">
+
+                </div>
+                <input
+                    class="form-control border border-1 border-light rounded-0 focus-ring focus-ring-light placeholder-glow"
+                    placeholder="Enter Your Password" type="password" id="signUpPassword">
+                <div class="alert alert-danger text-danger d-none signUpPassword">
+                    Password must be at least 6 characters and contain 1 capital letter!
+                </div>
+                <input
+                    class="form-control border border-1 border-light rounded-0 focus-ring focus-ring-light placeholder-glow"
+                    placeholder="Confirm Your Password" type="password" id="confirmSignUpPassword">
+                <div class="alert alert-danger text-danger d-none confirmSignUpPassword">
+                    Password doesn't match!
+                </div>
+                <button class="btn btn-info w-auto mx-auto" type="button" id="signUpButton">Sign Up</button>
+                <div class="alert alert-success text-success d-none signUpSuccess d-none">
+                    Account created successfully
+                </div>
+            </form>
+            <p class="text-center text-light mt-3">Already have an account? <a class="link-info" href="index.html">Sign
+                    in</a></p>
+        </div>
+    </div>
+
+    <script src="js/signUp.js"></script>
+</body>
+
+</html>
