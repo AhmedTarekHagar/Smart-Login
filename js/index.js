@@ -12,6 +12,10 @@ if (localStorage.getItem('userAccounts') != null) {
 }
 
 function login(){
+    if(localStorage.getItem('loggedIn') == null){
+        document.querySelector('.loginValidation').classList.remove('d-none');
+        return;
+    }
     users.forEach(user => {
         if((loginEmailInput.value.toLowerCase() == user.email.toLowerCase())
         && (loginPasswordInput.value.toLowerCase() == user.password.toLowerCase())){
